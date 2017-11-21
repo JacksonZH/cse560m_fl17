@@ -41,7 +41,7 @@ simulate(){
 		fi
 		cat m5out/stats.txt | grep -Ei "$patterns" | grep -Eo '\s+[0-9]+|\s+[0-9]\.[0-9]+' | sed 's/\s*//g'
 		# cat m5out/* | grep -E "$patterns" | tr -cs '0-9.' ' '
-		rm -r m5out
+		# rm -r m5out
 	done >> "$1"
 	echo "done!"
 }

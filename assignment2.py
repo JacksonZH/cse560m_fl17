@@ -56,8 +56,13 @@ system.mem_ctrl.range = system.mem_ranges[0]
 system.mem_ctrl.port = system.membus.master
 
 """create process"""
-isa = str(m5.defines.buildEnv['TARGET_ISA']).lower()
-binary = gem5_path + '/tests/test-progs/hello/bin/' + isa + '/linux/hello'
+#isa = str(m5.defines.buildEnv['TARGET_ISA']).lower()
+#binary = gem5_path + '/tests/test-progs/hello/bin/' + isa + '/linux/hello'
+if len(args) == 1:
+  binary = args[0]
+elif len(args) > 1:
+  SimpleOpts.print_help()
+  m5.fatal("Expected a binary to execute as positional argument")
 process = Process()
 process.cmd = [binary]
 system.cpu.workload = process
