@@ -15,4 +15,4 @@ def set_config(cpu_list, options):
     # set parameters for each thing
     cpu.numROBEntries = options.nr_entries
     cpu.numIQEntries = options.ni_entries
-    cpu.numPyhsFloatRegs = options.npf_regs
+    cpu.numPhysFloatRegs = options.npf_regs
