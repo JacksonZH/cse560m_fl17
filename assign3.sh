@@ -2,10 +2,9 @@ nr_val=(4 8 16 32 64 128)
 ni_val=(4 8 16 32 64 128)
 npf_val=(64 128 256 512 1024)
 
-if [[ -f "report.dat" ]]; then
-	rm "report.dat"
+if [[ ! -f "report.dat" ]]; then
+	touch "report.dat"
 fi
-touch "report.dat"
 
 patterns='seconds.*simulated|ROBFullEvents'
 
