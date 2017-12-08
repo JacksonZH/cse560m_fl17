@@ -1,7 +1,7 @@
 # nr_val=(4 8 16 32 64 128)
 nr_val=(128)
 # ni_val=(4 8 16 32 64 128)
-ni_val=(32)
+ni_val=(4)
 npf_val=(64 128 256 512 1024)
 
 if [[ ! -f "report.dat" ]]; then
