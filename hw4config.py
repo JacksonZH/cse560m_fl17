@@ -64,7 +64,7 @@ from common import CpuConfig
 from common import MemConfig
 from common.Caches import *
 from common.cpu2000 import *
-import hw3opts
+import hw4opts
 
 # Check if KVM support has been enabled, we might need to do VM
 # configuration if that's the case.
