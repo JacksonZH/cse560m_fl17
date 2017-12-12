@@ -1,5 +1,5 @@
 # policy_type=(fetch_policy ROB_policy)
-fetch_policy=('SingleThread' 'RoundRobin' 'IQCount' 'LSQCount')
+fetch_policy=('SingleThread' 'RoundRobin' 'Branch' 'IQCount' 'LSQCount')
 ROB_policy=('Dynamic' 'Partitioned' 'Threshold')
 
 # if [[ ! -f "report.dat" ]]; then
