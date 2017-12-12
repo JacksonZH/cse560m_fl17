@@ -23,8 +23,8 @@ def addHW4Opts(parser):
 def set_config(cpu_list, options):
   for cpu in cpu_list:
     # set parameters for each thing
-    cpu.numROBEntries = options.nr_entries
-    cpu.numIQEntries = options.ni_entries
+    # cpu.numROBEntries = options.nr_entries
+    # cpu.numIQEntries = options.ni_entries
     cpu.numPhysFloatRegs = options.npf_regs
     cpu.smtFetchPolicy = options.fetch_policy
     # cpu.smtLSQPolicy = options.LSQ_policy
