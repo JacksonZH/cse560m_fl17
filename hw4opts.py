@@ -20,5 +20,6 @@ def set_config(cpu_list, options):
     cpu.numROBEntries = options.nr_entries
     cpu.numIQEntries = options.ni_entries
     cpu.numPhysFloatRegs = options.npf_regs
+    print cpu.numROBEntries,cpu.numIQEntries,cpu.numPhysFloatRegs
     cpu.smtFetchPolicy = options.fetch_policy
     cpu.smtCommitPolicy = options.commit_policy
