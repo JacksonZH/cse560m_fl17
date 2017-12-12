@@ -161,7 +161,7 @@ system = System(cpu = [CPUClass(cpu_id=i) for i in xrange(np)],
                 mem_ranges = [AddrRange(options.mem_size)],
                 cache_line_size = options.cacheline_size)
 
-hw3opts.set_config(system.cpu, options)
+hw4opts.set_config(system.cpu, options)
 if numThreads > 1:
     system.multi_thread = True
 
