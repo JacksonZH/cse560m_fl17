@@ -22,5 +22,7 @@ def set_config(cpu_list, options):
     cpu.numROBEntries = options.nr_entries
     cpu.numIQEntries = options.ni_entries
     cpu.numPhysFloatRegs = options.npf_regs
-    cpu.smtFetchPolicy = options.fetch_policy
-    cpu.smtROBPolicy = options.ROB_policy
+    if options.fetch_policy:
+	    cpu.smtFetchPolicy = options.fetch_policy
+    if options.ROB_policy:
+	    cpu.smtROBPolicy = options.ROB_policy

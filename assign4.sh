@@ -3,7 +3,7 @@ fetch_policy=('SingleThread' 'RoundRobin' 'Branch' 'IQCount' 'LSQCount')
 ROB_policy=('Dynamic' 'Partitioned' 'Threshold')
 
 rm -r report
-
+rm core*
 rm *.txt
 mkdir report
 # fetch policy
