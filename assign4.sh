@@ -14,12 +14,12 @@ for pn in ${fetch_policy[*]} ; do
 	cp m5out/stats.txt report/$fn
 done
 # ROB policy
-prefix=ROBPolicy\_
-for pn in ${ROB_policy[*]} ; do
-	fn=$prefix$pn.txt
-	$GEM5/build/ARM/gem5.opt hw4config.py --smt -c "daxpy/daxpy_arm;daxpy/daxpy_arm;daxpy/daxpy_arm;daxpy/daxpy_arm" --cpu-type="DerivO3CPU" --caches --l2cache  --ROB_policy=$pn
-	cp m5out/stats.txt report/$fn
-done
+# prefix=ROBPolicy\_
+# for pn in ${ROB_policy[*]} ; do
+# 	fn=$prefix$pn.txt
+# 	$GEM5/build/ARM/gem5.opt hw4config.py --smt -c "daxpy/daxpy_arm;daxpy/daxpy_arm;daxpy/daxpy_arm;daxpy/daxpy_arm" --cpu-type="DerivO3CPU" --caches --l2cache  --ROB_policy=$pn
+# 	cp m5out/stats.txt report/$fn
+# done
 # patterns='seconds.*simulated|ROBFullEvents'
 
 # for fp in ${fps[*]}; do
