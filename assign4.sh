@@ -2,9 +2,8 @@
 fetch_policy=('SingleThread' 'RoundRobin' 'Branch' 'IQCount' 'LSQCount')
 ROB_policy=('Dynamic' 'Partitioned' 'Threshold')
 
-# if [[ ! -f "report.dat" ]]; then
-# 	touch "report.dat"
-# fi
+rm -r report
+
 rm *.txt
 mkdir report
 # fetch policy
