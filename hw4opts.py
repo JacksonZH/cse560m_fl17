@@ -4,7 +4,7 @@ from textwrap import TextWrapper
 
 #add options for number of ROB entries, IQ entries, and number of physical
 #floating point registers
-def addHW3Opts(parser):
+def addHW4Opts(parser):
 	parser.add_option('--nr_entries', type="int", default=192)
 	parser.add_option('--ni_entries', type="int", default=64)
 	parser.add_option('--npf_regs', type="int", default=256)

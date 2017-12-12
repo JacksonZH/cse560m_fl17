@@ -127,7 +127,7 @@ def get_processes(options):
 parser = optparse.OptionParser()
 Options.addCommonOptions(parser)
 Options.addSEOptions(parser)
-hw3opts.addHW3Opts(parser)
+hw4opts.addHW4Opts(parser)
 
 if '--ruby' in sys.argv:
     Ruby.define_options(parser)
