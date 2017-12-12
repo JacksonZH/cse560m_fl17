@@ -11,7 +11,13 @@ def addHW4Opts(parser):
 	# available policies: SingleThread RoundRobin Branch IQCount LSQCount
 	parser.add_option('--fetch_policy', type="str", default="SingleThread")
 	# available policies: Dynamic Partitioned Threshold
-	parser.add_option('--ROB_policy', type="str", default="Partitioned")
+	parser.add_option('--LSQ_policy', type="str", default="Dynamic")
+	# available policies: Dynamic Partitioned Threshold
+	parser.add_option('--IQ_policy', type="str", default="Dynamic")
+	# available policies: Dynamic Partitioned Threshold
+	parser.add_option('--ROB_policy', type="str", default="Dynamic")
+	# available policies: Aggressive RoundRobin OldestReady
+	parser.add_option('--commit_policy', type="str", default="Aggressive")
 
 #set parameters taken in from options on command line
 def set_config(cpu_list, options):
@@ -21,4 +27,7 @@ def set_config(cpu_list, options):
     cpu.numIQEntries = options.ni_entries
     cpu.numPhysFloatRegs = options.npf_regs
     cpu.smtFetchPolicy = options.fetch_policy
+    cpu.smtLSQPolicy = options.LSQ_policy
+    cpu.smtIQPolicy = options.IQ_policy
     cpu.smtROBPolicy = options.ROB_policy
+    cpu.smtCommitPolicy = options.commit_policy
