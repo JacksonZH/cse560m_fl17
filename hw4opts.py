@@ -7,7 +7,7 @@ from textwrap import TextWrapper
 def addHW4Opts(parser):
 	parser.add_option('--nr_entries', type="int", default=192)
 	parser.add_option('--ni_entries', type="int", default=64)
-	parser.add_option('--npf_regs', type="int", default=256)
+	parser.add_option('--npf_regs', type="int", default=1024)
 	# available policies: singlethread, roundrobin, branch, iqcount, lsqcount
 	parser.add_option('--fetch_policy', type="str", default="singlethread")
 	# available policies: aggressive, roundrobin, oldestready
