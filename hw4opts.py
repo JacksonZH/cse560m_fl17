@@ -8,10 +8,10 @@ def addHW4Opts(parser):
 	parser.add_option('--nr_entries', type="int", default=192)
 	parser.add_option('--ni_entries', type="int", default=64)
 	parser.add_option('--npf_regs', type="int", default=1024)
-	# available policies: singlethread, roundrobin, branch, iqcount, lsqcount
-	parser.add_option('--fetch_policy', type="str", default="singlethread")
-	# available policies: aggressive, roundrobin, oldestready
-	parser.add_option('--commit_policy', type="str", default="aggressive")
+	# available policies: SingleThread, RoundRobin, Branch, IQCount, LSQCount
+	parser.add_option('--fetch_policy', type="str", default="SingleThread")
+	# available policies: Aggressive, RoundRobin, OldestReady
+	parser.add_option('--commit_policy', type="str", default="Aggressive")
 
 #set parameters taken in from options on command line
 def set_config(cpu_list, options):

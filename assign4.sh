@@ -1,5 +1,5 @@
-fps=('singlethread' 'roundrobin' 'branch' 'iqcount' 'lsqcount')
-cps=('aggressive' 'roundrobin' 'oldestready')
+fps=('SingleThread' 'RoundRobin' 'Branch' 'IQCount' 'LSQCount')
+cps=('Aggressive' 'RoundRobin' 'OldestReady')
 
 # if [[ ! -f "report.dat" ]]; then
 # 	touch "report.dat"
