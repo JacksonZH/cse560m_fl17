@@ -1,4 +1,4 @@
-fps=('SingleThread' 'RoundRobin' 'Branch' 'IQCount' 'LSQCount')
+fps=('SingleThread' 'RoundRobin' 'IQCount' 'LSQCount')
 cps=('Aggressive' 'RoundRobin' 'OldestReady')
 
 # if [[ ! -f "report.dat" ]]; then
